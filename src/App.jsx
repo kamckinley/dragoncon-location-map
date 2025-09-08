@@ -1,6 +1,24 @@
 import './App.css';
 
 function App() {
+  const [startNode, setStartNode] = useState("");
+  const [endNode, setEndNode] = useState("");
+  const [routeResult, setRouteResult] = useState(null);
+  const handleRoute = () => {
+    if (!startNode || !endNode) {
+      alert("Please select both start and end nodes");
+      return;
+    }
+    const start = nodes[startNode];
+    const end = nodes[endNode];
+    setRouteResult({
+      start: start.name,
+      end: end.name,
+      startConnections: start.connections.map((c) => nodes[c].name),
+      endConnections: end.connections.map((c) => nodes[c].name),
+    });
+  };
+
   return (
     <div className="App">
       <header className="App-header">
