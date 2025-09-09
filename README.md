@@ -1,70 +1,60 @@
-# GitHub Codespaces ♥️ React
+## 🗺️ DragonCon Map
 
-Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
+This project is an interactive location map designed to help attendees navigate DragonCon’s many hotels and event spaces. It’s built with React and models buildings, connections, and routes as a graph to make routing intuitive.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+## Features
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+🔍 Start & End Selection – choose a starting building and destination from dropdowns.
+🏨 Grouped by Building – locations are organized by building to reduce dropdown clutter.
+🛤️ Routing Logic (in progress) – find paths between locations using building connections.
+♿ Accessibility Mode (planned) – generate elevator-only routes for improved accessibility.
+⬆️ Multi-Level Navigation (planned) – account for stairs, escalators, elevators, and skybridges.
 
-This project was bootstrapped for you with [Vite](https://vitejs.dev/).
+## Planned Features
 
-## Available Scripts
+- **Expanded Map Coverage**: Add data for additional hotels (Marriott, Hilton, Sheraton, Westin), America's Mart, Peachtree Center, and MARTA stations.  
+- **Accessibility Options**: Routing that prioritizes elevators over stairs/escalators.  
+- **Path Visualization**: Show the computed route visually on a simple map view.  
+- **Favorites / Frequent Routes**: Save common start and end points for quick access.  
 
-In the project directory, you can run:
 
-### `npm start`
 
-We've already run this for you in the `Codespaces: server` terminal window below. If you need to stop the server for any reason you can just run `npm start` again to bring it back online.
+## 🚀 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000/](http://localhost:3000/) in the built-in Simple Browser (`Cmd/Ctrl + Shift + P > Simple Browser: Show`) to view your running application.
+ React (frontend)
+ JavaScript (routing + data structures)
+ Nodes/Graph Modeling (custom JSON files for buildings & connections)
 
-The page will reload automatically when you make changes.\
-You may also see any lint errors in the console.
+## 📂 Project Structure
+/src
+  App.jsx          # Main app logic
+  /data
+    buildings.js   # Building definitions
+    nodes.js       # Location nodes & connections
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the repo:
+ git clone https://github.com/kamckinley/dragoncon-location-map.git
+ cd dragoncon-map
 
-### `npm run build`
+Install dependencies:
+ npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start development server:
+ npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Roadmap
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Building & node data model
 
-## Learn More
+Dropdown selection for start/end
 
-You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
+Display selected route
 
-To learn Vitest, a Vite-native testing framework, go to [Vitest documentation](https://vitest.dev/guide/)
+Implement routing algorithm
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Accessibility mode
 
-### Code Splitting
+Visual map display
 
-This section has moved here: [https://sambitsahoo.com/blog/vite-code-splitting-that-works.html](https://sambitsahoo.com/blog/vite-code-splitting-that-works.html)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf](https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf)
-
-### Advanced Configuration
-
-This section has moved here: [https://vitejs.dev/guide/build.html#advanced-base-options](https://vitejs.dev/guide/build.html#advanced-base-options)
-
-### Deployment
-
-This section has moved here: [https://vitejs.dev/guide/build.html](https://vitejs.dev/guide/build.html)
-
-### Troubleshooting
-
-This section has moved here: [https://vitejs.dev/guide/troubleshooting.html](https://vitejs.dev/guide/troubleshooting.html)
