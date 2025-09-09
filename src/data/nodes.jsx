@@ -1,4 +1,4 @@
-import { Building, NodeType } from "./buildings.js";
+import { Building, NodeType } from "./building";
 
 export const nodes = {
   // --Skybridges--
