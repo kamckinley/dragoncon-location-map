@@ -4,11 +4,15 @@ This project is an interactive location map designed to help attendees navigate 
 
 ## Features
 
-🔍 Start & End Selection – choose a starting building and destination from dropdowns.
-🏨 Grouped by Building – locations are organized by building to reduce dropdown clutter.
-🛤️ Routing Logic (in progress) – find paths between locations using building connections.
-♿ Accessibility Mode (planned) – generate elevator-only routes for improved accessibility.
-⬆️ Multi-Level Navigation (planned) – account for stairs, escalators, elevators, and skybridges.
+ **🔍 Start & End Selection** – choose a starting building and destination from dropdowns.
+
+ **🏨 Grouped by Building** – locations are organized by building to reduce dropdown clutter.
+
+ **🛤️ Routing Logic (in progress)** – find paths between locations using building connections.
+
+ **♿ Accessibility Mode (planned)** – generate elevator-only routes for improved accessibility.
+
+ **⬆️ Multi-Level Navigation (planned)** – account for stairs, escalators, elevators, and skybridges.
 
 ## Planned Features
 
@@ -22,27 +26,38 @@ This project is an interactive location map designed to help attendees navigate 
 ## 🚀 Tech Stack
 
  React (frontend)
+
  JavaScript (routing + data structures)
+
  Nodes/Graph Modeling (custom JSON files for buildings & connections)
 
 ## 📂 Project Structure
+
 /src
-  App.jsx          # Main app logic
-  /data
-    buildings.js   # Building definitions
-    nodes.js       # Location nodes & connections
+
+App.jsx          # Main app logic
+
+/data
+
+buildings.js   # Building definitions
+
+nodes.js       # Location nodes & connections
 
 ## Getting Started
 
-Clone the repo:
- git clone https://github.com/kamckinley/dragoncon-location-map.git
- cd dragoncon-map
+- Clone the repo: 
 
-Install dependencies:
- npm install
+  - git clone https://github.com/kamckinley/dragoncon-location-map.git
 
-Start development server:
- npm start
+  - cd dragoncon-map
+
+- Install dependencies:
+
+  - npm install
+
+- Start development server:
+
+  - npm start
 
 ## Roadmap
 
